@@ -1,14 +1,24 @@
+* {
+    overflow-x: hidden;
+
+}
+
 body {
     display: flex;
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
-    color: darkgrey;
+    color: rgb(205, 96, 96);
     flex-direction: column;
 }
 
 .container {
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .nav-bar {
@@ -21,13 +31,62 @@ body {
 }
 
 .logo {
-    height: 46px;
+    height: 45px;
     width: 46px;
     background-size: 47px;
-    background-image: url("https://th.bing.com/th/id/OIP.MCra8YvlISznE-SlbuySigHaHa?pid=ImgDet&rs=1");
+    background-image: url('https://www.pngmart.com/files/3/Free-PNG-Picture.png');
     margin: 20px;
 }
 
 .user-container {
     margin: 20px;
+}
+
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: rgb(0 0 0 / 12%) 0 1px 8px;
+}
+
+.card img {
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.card :hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2xp rgb(205, 96, 96);
+    border-radius: 5px;
+}
+
+
+.image {
+    width: 150px;
+    height: 120px;
+}
+
+.footer {
+    width: 100%;
+    background-color: lightcoral;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 30px;
+    color: white;
+
 }
